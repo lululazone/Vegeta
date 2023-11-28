@@ -1,13 +1,14 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { MongooseModule } from '@nestjs/mongoose';
-import { UsersController } from './users/users.controller';
-import { UsersService } from './users/users.service';
-import { User, UserSchema } from './schemas/user.schema';
-import { APP_FILTER } from '@nestjs/core';
-import { AllExceptionsFilter } from './http-exception.filter';
-import { ConfigModule, ConfigService } from '@nestjs/config';
+import { Module } from "@nestjs/common";
+import { AppController } from "./app.controller";
+import { AppService } from "./app.service";
+import { MongooseModule } from "@nestjs/mongoose";
+import { UsersController } from "./users/users.controller";
+import { UsersService } from "./users/users.service";
+import { User, UserSchema } from "./schemas/user.schema";
+import { APP_FILTER, APP_INTERCEPTOR } from "@nestjs/core";
+import { AllExceptionsFilter } from "./http-exception.filter";
+import { ConfigModule, ConfigService } from "@nestjs/config";
+import { TransformInterceptor } from "./transformer.interceptor";
 
 @Module({
   imports: [
@@ -17,7 +18,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        uri: configService.get<string>('MONGODB_URI'),
+        uri: configService.get<string>("MONGODB_URI"),
       }),
       inject: [ConfigService],
     }),
@@ -29,6 +30,10 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     {
       provide: APP_FILTER,
       useClass: AllExceptionsFilter,
+    },
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: TransformInterceptor,
     },
     AppService,
     UsersService,
