@@ -1,0 +1,90 @@
+.rectangle {
+  width: 20%;
+  height: 90%;
+  background: #1A321F;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.planttitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-right: 10px; /* Ajoutez une marge à droite pour espacer le texte du bouton */
+}
+
+.arrowButton {
+  background-color: inherit;
+  border: none;
+  margin-left: 10vw;
+  transition-duration: 0.4s;
+}
+
+.arrowButton:hover {
+  background-color: #558658;
+  color: #1A321F;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.arrowButton img {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer img {
+
+  border: #FFFFFF 2px solid;
+  border-radius: 10px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: right;
+  margin-right: 4vw;
+  width: 28%;
+  margin-left: 50%;
+  ;
+
+}
+
+.comment img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10%;
+}
+
+.famtext{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-right: 90%;
+  border: inherit;
+  border-radius: 10px;
+  background-color: #558658;
+
+}
