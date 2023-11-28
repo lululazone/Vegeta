@@ -34,6 +34,6 @@ export class UsersService {
 
   // Supprimer un utilisateur
   async delete(id: string): Promise<any> {
-    return this.userModel.findByIdAndRemove(id).exec();
+    return this.userModel.findOneAndDelete({ _id: id }).exec();
   }
 }
