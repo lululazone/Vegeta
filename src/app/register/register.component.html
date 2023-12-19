@@ -5,11 +5,12 @@
     <div class="form-container">
       <h1 class="opacity">REGISTER</h1>
       <form>
-        <input type="text" placeholder="MAIL ADDRESS" />
-        <input type="text" placeholder="USERNAME" />
-        <input type="password" placeholder="PASSWORD" />
-        <input type="password" placeholder="RETYPE PASSWORD" />
-        <button class="opacity">SUBMIT</button>
+        <input type="text" id="mailadress" placeholder="MAIL ADDRESS" />
+        <input type="text" id="username" placeholder="USERNAME" />
+        <input type="password" id="password" placeholder="PASSWORD" />
+        <input type="password" id="passwordretype" placeholder="RETYPE PASSWORD" />
+        <button class="opacity" (click)="postRegister()">SUBMIT</button>
+        <span style="justify-content: center">Error</span>
       </form>
     </div>
     <div class="circle circle-two"></div>
