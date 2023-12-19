@@ -1,11 +1,12 @@
 .rectangle {
   width: 20%;
-  height: 90%;
+  height: 92vh;
   background: #1A321F;
   border-radius: 10px;
   position: absolute;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .container {
@@ -32,7 +33,7 @@
 .arrowButton:hover {
   background-color: #558658;
   color: #1A321F;
-  border-radius: 2px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -80,11 +81,30 @@
 
 .famtext{
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   color: #FFFFFF;
   margin-right: 90%;
+  width: 120%;
+  height: 50%;
   border: inherit;
-  border-radius: 10px;
-  background-color: #558658;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #425643 18%, #558658 70%);
 
+}
+
+span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.colorbutton{
+  transition-duration: 0.4s;
+  font-size: 30px;
+  color: #FFFFFF;
+  border-radius: 25px;
+  width: 7%;
+  height: 100%;
+  background-size: cover;
+  margin: 1%;
 }
