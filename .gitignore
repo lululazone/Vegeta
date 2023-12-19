@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
@@ -13,6 +14,32 @@ yarn-error.log
 
 # IDEs and editors
 .idea/
+=======
+# compiled output
+/dist
+/node_modules
+
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+>>>>>>> auth
 .project
 .classpath
 .c9/
@@ -20,11 +47,16 @@ yarn-error.log
 .settings/
 *.sublime-workspace
 
+<<<<<<< HEAD
 # Visual Studio Code
+=======
+# IDE - VSCode
+>>>>>>> auth
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+<<<<<<< HEAD
 !.vscode/extensions.json
 .history/*
 
@@ -40,3 +72,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+=======
+!.vscode/extensions.json
+>>>>>>> auth
