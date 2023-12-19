@@ -7,11 +7,12 @@ import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import {SearchpanelComponent} from "./searchpanel/searchpanel.component";
+import {LoginComponent} from "./login/login.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LateralMenuComponent, NgOptimizedImage, SearchpanelComponent],
+  imports: [CommonModule, RouterOutlet, LateralMenuComponent, NgOptimizedImage, SearchpanelComponent, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -32,4 +33,5 @@ export class AppComponent implements OnInit{
       target: 'ol-map'
     });
   }
+
 }
