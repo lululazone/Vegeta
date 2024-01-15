@@ -11,6 +11,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     MongooseModule.forRoot(
       'mongodb+srv://vegetaynov:J98bPlfBC25cJyZY@vegeta.5qvrdgr.mongodb.net/?retryWrites=true&w=majority',
+      // 'mongodb+srv://vegetaynov:tJlaKyQCQv4hpIA3@vegeta.5qvrdgr.mongodb.net/?retryWrites=true&w=majority',
     ),
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
     AuthModule,

@@ -43,7 +43,7 @@ export class UsersService {
   }
 
   async delete(id: string): Promise<any> {
-    return this.userModel.findByIdAndRemove(id).exec();
+    return this.userModel.deleteOne({ _id: id }).exec();
   }
 
   async findOneByEmail(email: string): Promise<User | null> {

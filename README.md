@@ -1,95 +1,73 @@
-# Titre du Projet API
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Une brève description de votre projet : qu'est-ce que c'est, à quoi ça sert, et pourquoi c'est utile.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Démarrage rapide
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-Ces instructions vous aideront à obtenir une copie du projet en cours d'exécution sur votre machine locale à des fins de développement et de test.
+## Description
 
-### Prérequis
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-Ce que vous devez installer pour utiliser l'API, et comment les installer :
+## Installation
 
-Node.js (version 12 ou supérieure)
-NestJS CLI
-MongoDB
+```bash
+$ npm install
+```
 
-### Installation
+## Running the app
 
-Une série d'étapes pour expliquer comment mettre en place l'environnement de développement.
+```bash
+# development
+$ npm run start
 
-<pre>
-git clone https://example.com/your-project.git
-cd your-project
-npm install
-</pre>
+# watch mode
+$ npm run start:dev
 
-### Configuration
+# production mode
+$ npm run start:prod
+```
 
-Expliquez comment configurer l'environnement local :
-Copiez le fichier .env.example en .env et remplissez les variables d'environnement nécessaires.
+## Test
 
-### Lancement de l'API
+```bash
+# unit tests
+$ npm run test
 
-Comment lancer l'API localement :
+# e2e tests
+$ npm run test:e2e
 
-<pre>
-npm run start
-</pre>
+# test coverage
+$ npm run test:cov
+```
 
-## Utilisation
+## Support
 
-Exemples sur comment utiliser l'API, incluant des exemples de requêtes.
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-### Exemples de Requêtes
+## Stay in touch
 
-<pre>
-GET /api/users
-POST /api/users
-</pre>
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## Développement
+## License
 
-Conseils pour les développeurs sur comment travailler sur l'API.
-
-### Tests
-
-Comment exécuter les tests automatisés pour ce système :
-
-<pre>
-npm run test
-</pre>
-
-## Déploiement
-
-Notes sur comment déployer l'API dans un système live.
-
-## Construit avec
-
-Mentionnez les technologies principales utilisées pour construire l'API.
-
-- [NestJS](https://nestjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Node.js](https://nodejs.org/)
-
-## Contribuer
-
-Instructions pour contribuer au projet.
-
-## Versioning
-
-Expliquez comment la gestion des versions est effectuée.
-
-## Auteurs
-
-Listez les contributeurs principaux du projet.
-
-- **Marie CASSOU, Lucas GIRARD, Joseph MAIA RIBEIRO**
-
-## Licence
-
-Ce projet est sous licence XYZ - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
-
-## Remerciements
-
-Mentionnez tous ceux qui ont aidé pour le projet.
+Nest is [MIT licensed](LICENSE).
