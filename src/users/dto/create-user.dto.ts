@@ -7,6 +7,8 @@ export class CreateUserDto {
   readonly last: string;
   @IsString()
   readonly password: string;
+  @IsString()
+  readonly avatar: string;
   @IsEmail()
   readonly email: string;
 }

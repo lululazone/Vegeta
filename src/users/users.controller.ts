@@ -14,7 +14,7 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User } from '../schemas/user.schema';
-import { JwtAuthGuard } from './guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
 
 @Controller('users')
 export class UsersController {
@@ -48,7 +48,7 @@ export class UsersController {
       return await this.usersService.create(createUserDto);
     } catch (error) {
       throw new HttpException(
-        "Erreur lors de la création de l'utilisateur",
+        "KO",
         HttpStatus.BAD_REQUEST,
       );
     }
